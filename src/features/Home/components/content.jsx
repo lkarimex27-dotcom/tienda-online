@@ -27,19 +27,19 @@ export default function Content() {
       id: 1,
       name: "Auriculares Bluetooth",
       price: 159900,
-      image: "/images/auriculares.jpeg"
+      image: `${import.meta.env.BASE_URL}images/auriculares.jpeg`
     },
     {
       id: 2,
       name: "Teclado Mecánico",
       price: 249000,
-      image: "/images/teclado.jpeg"
+      image: `${import.meta.env.BASE_URL}images/teclado.jpeg`
     },
     {
       id: 3,
       name: "Smartwatch Deportivo",
       price: 329000,
-      image: "/images/smartwatch.jpeg"
+      image: `${import.meta.env.BASE_URL}images/smartwatch.jpeg`
     }
   ]
 
@@ -58,7 +58,7 @@ export default function Content() {
       <section className="bg-dark text-white text-center d-flex align-items-center"
          style={{
            height: "70vh",
-           backgroundImage: "url('../../../../public/images/hero.png')",
+           backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.png)`,
            backgroundSize: "cover",
            backgroundPosition: "center"
          }}>
