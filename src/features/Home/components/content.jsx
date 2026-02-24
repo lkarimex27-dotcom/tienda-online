@@ -42,7 +42,6 @@ export default function Content() {
       image: `${import.meta.env.BASE_URL}images/smartwatch.jpeg`
     }
   ]
-
   const [cart, setCart] = useState([])
 
   const addToCart = (product) => {
@@ -58,7 +57,7 @@ export default function Content() {
       <section className="bg-dark text-white text-center d-flex align-items-center"
          style={{
            height: "70vh",
-           backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.png)`,
+           backgroundImage: "url('../../../../public/images/hero.png')",
            backgroundSize: "cover",
            backgroundPosition: "center"
          }}>
